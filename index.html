@@ -1,0 +1,228 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div id="header">
+        <div class="container"> 
+            <nav>
+                <img src="images/logo.png" alt="" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <div class="menu-btn">
+                    <i class="fa-solid fas fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1> Hi, I'm <span>Harshit</span> <br>Sharma From India</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------------about----------------- -->
+
+
+    <div id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me </h1>
+                        <p>AI and ML enthusiast seeking a challenging and dynamic software engineering role where I can leverage my
+                            expertise in developing innovative solutions, enhancing user experiences, and contributing to the growth of a
+                            forward-thinking tech company and the tech industry. Always eager to learn, innovate, and collaborate on
+                            impactful projects..
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                            <p class="tab-links" onclick="opentab('Experiences')">Experiences </p>
+                            <p class="tab-links" onclick="opentab('Education')">Education </p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>Designing, Figma, Web-Interfaces </li>
+                                <li><span>Web Development</span><br>HTML, CSS, Javascript, React.js, Node.js </li>
+                                <li><span>DataBases</span><br>MongoDB, MySql </li>
+                                <li><span>Data Analytics</span><br>Python, Numpy, Pandas, Matplotlib, Excel, ReGex, PowerBI</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="Experiences">
+                            <ul>
+                                <li><span>Jul 2024 - Aug 2024</span><br>Intern - S/W Developer, Varaisys - Noida </li>
+                                <li><span>Sept 2024 - Nov 2024</span><br>Intern - Front End Web Developer, Devnsest - Remote </li>
+                            </ul>
+                        </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Aug 2020 - Jul 2025</span><br>B. Tech in CSE(Artificial Intelligence and Machine Learning) - A.K.T.U  </li>
+                            <li><span>Apr 2020 - Jul 2021</span><br>Class - XII </li>
+                            <li><span>Apr 2018 - Jun 2019</span><br>Class - X</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>    
+        </div>
+    </div>
+<!-- -------------------services------------------->
+
+        <div id="services" class="section">
+            <div class="container">
+                <h1 class="sub-title">Services</h1>
+                <div class="services-list">
+                    <div class="service-col">
+                        <img src="images/SERVICEE-1.png" alt="" class="service-img">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Web Development</h3>
+                        <p>Creating responsive and user-friendly websites using the latest technologies.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="service-col">
+                        <img src="images/service-2.png" alt="" class="service-img">
+                        <i class="fa-solid fa-crop"></i>
+                        <h3>UI/UX Design</h3>
+                        <p>Designing intuitive interfaces that enhance user experience and engagement.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                    <div class="service-col">
+                        <img src="images/service-3.png" alt=""  class="service-img">
+                        <i class="fa-brands fa-app-store"></i>
+                        <h3>Data Analytics</h3>
+                        <p>Analyzing data to provide insights and support decision-making processes.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+            <!---------------------portfolio-------------------->
+
+            <div id="portfolio" class="section">
+                <div class="container">
+                    <h1 class="sub-title">Portfolio</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/portttfolio-1.avif" alt="" class="work-img">
+                            <div class="layer">
+                                <h3>PersonaGauge</h3>
+                                <p>Personality Prediction System Through CV Analysis and Quizzes<br> Contributed by creating front end of the web-site. </p>
+                                <a href="https://ijirt.org/article?manuscript=175972">Publication Of PersonaGauge</a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="images/porttfolio-2.avif" alt="" class="work-img">   
+                            <div class="layer">
+                                <h3>Brick Breaking Game</h3>
+                                <p> Contributed in developing UI of a Brick Breaking Game in which the player must smash a wall of bricks by a bouncing ball using a paddle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="btn">see  more</a>
+            </div>
+
+
+
+
+<!------------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>eduharshit151619@gmail.com</p>
+                    <p>8285860252</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/panditharshit1909?igsh=aWY1OXZ4aGNya3Zu" class="social-icons"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/14EjJ1STepU/" class="social-icons"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="social-icons"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/harshit-sharma-334443275/" class="social-icons"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                    </div>
+                    <div>
+                        <a href="images/Harshit_Sharma_Resume.pdf"  Class="btn1 btn2"> Download CV</a>
+                    </div>
+                    
+
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" cols="30" rows="6" placeholder=" your Message"></textarea>
+                        <button type="submit" Class="btn1 btn2" >SUBMIT</button>
+                    </form>
+                    <span id="message"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>© 2024 Harshit Sharma. All rights reserved.</p>
+        </div>
+    </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (let tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (let tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sideMenu = document.getElementById("side-menu");
+            function openmenu() {
+                sideMenu.style.right = "0";
+            }
+            function closemenu() {
+                sideMenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwWX-2asqoiJYjwvqBf805RjRN3VkeCbLPbX3cSWIvqzqQ_RHO7LCrn2iSC3yCuPYrxhA/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const message = document.getElementById("message")
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    message.innerHTML = "Message sent successfully!";
+                    setTimeout(function() {
+                        message.innerHTML = "";
+                    }, 3000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+ </body>
+ </html>
